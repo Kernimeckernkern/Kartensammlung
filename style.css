@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: -webkit-linear-gradient(166.66deg, rgb(233, 24, 185) 4.62%, rgb(10, 228, 163) 10.62%, rgb(116, 75, 196) 86.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding: 0 0;   
+    font-size: 2em;
+}
+h2 {
+    background: -webkit-linear-gradient(166.66deg, rgb(233, 24, 185) 4.62%, rgb(10, 228, 163) 10.62%, rgb(116, 75, 196) 86.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding: 0 0;   
+    
+}
+h3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card-recommendation {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-recommendation:hover {
+    transform: translateY(-10px);
+}
+
+.card-recommendation img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.card-recommendation h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card-recommendation p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+}
+
+footer {
+    background-color: #9f9f9f;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
