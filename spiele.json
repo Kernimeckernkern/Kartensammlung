@@ -1,0 +1,4 @@
+{
+    "spiel": {"name": "Spielname","link":"www.cool.de", "spruch":"Cooles Spie", "erklärung": "Es geht so und so", "args": ["link", "trink"]},
+    "skat": {"name": "Skat","link":"https://www.skat-spiel.de/skat-regeln.html", "spruch":"Zu dritt? Perfekt für Skat. Erst Reizen, dann einheizen.", "args": ["link", 32]}
+}
