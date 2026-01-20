@@ -4,15 +4,22 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    align-items: center;
 }
 
-header {
+h1 {
     background: -webkit-linear-gradient(166.66deg, rgb(233, 24, 185) 4.62%, rgb(10, 228, 163) 10.62%, rgb(116, 75, 196) 86.29%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     text-align: center;
-    padding: 0 0;   
-    font-size: 2em;
+    padding: 0 0; 
+    font-size: 2em; 
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    top: 20px;
+    margin-bottom: 50px;
+
 }
 h2 {
     background: -webkit-linear-gradient(166.66deg, rgb(233, 24, 185) 4.62%, rgb(10, 228, 163) 10.62%, rgb(116, 75, 196) 86.29%);
@@ -73,6 +80,23 @@ main {
 .card-recommendation a {
     text-decoration: none;
 }
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 5px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
 
 footer {
     background-color: #9f9f9f;
@@ -82,4 +106,45 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+#wow-head{
+    position: relative;
+}
+#wow-gif{
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+    display: none;
+}
+#wow:hover #wow-gif{
+    display: block;
+}
+#wow:hover #wow-gif2{
+    display: block;
+}
+#wow:focus #wow-gif2{
+    display: block;
+}
+#wow:focus #wow-gif{
+    display: block;
+}
+
+#wow-gif2{
+    position: absolute;
+    bottom: 10%;
+    left: 95%;
+    display: none;
+}
+@keyframes myAnimation {
+    from {display: none;}
+  to {display: block;}
+  }
+
+#back{  
+    position:fixed;
+    top: 3%;
+    right: 3%;
+    text-decoration: none;
 }

@@ -1,4 +1,14 @@
 {
-    "spiel": {"name": "Spielname","link":"www.cool.de", "spruch":"Cooles Spiel", "erklärung": "Es geht so und so", "args": ["link", "trink"]},
-    "skat": {"name": "Skat","link":"https://www.skat-spiel.de/skat-regeln.html", "spruch":"Zu dritt? Perfekt für Skat. Erst Reizen, dann einheizen.", "args": ["link", 32]}
+    "skat": {"name": "Skat","link":"https://www.skat-spiel.de/skat-regeln.html", "spruch":"Zu dritt? Perfekt für Skat. Erst Reizen, dann einheizen.", "personen":"3","karten-set":"32", "cat": "stich", "args": ["link"]},
+    "durak": {"name": "Durak", "link": "https://www.pagat.com/de/beating/durak.html", "spruch": "Gewinner nennen es Burak. Angriffe von links und rechts.", "personen":"2-6","karten-set":"36", "cat": "stich", "args": ["link"]},
+    "arschloch": {"name": "Arschloch", "link": "https://www.spiele-palast.de/kartenspiele/arschloch", "spruch": "In dem Spiel und im echten Leben, will man kein ... sein", "personen":"3+","karten-set":"52", "cat": "lege", "args": ["link"]},
+    "luegen": {"name": "Lügen", "link": "https://greatime.de/kartenspiel-luegen/", "spruch": "Lügen haben kurze Beine, wenn man schlecht darin ist", "personen":"2+","karten-set":"32 oder 52", "cat": "lege", "args": ["link"]},
+    "schwimmen": {"name": "Schwimmen", "link": "https://www.spielanleitung.org/schwimmen.html","spruch": "Just keep swimming, just keep swimming or have 31 eyes", "personen":"2-9","karten-set":"32", "cat": "lege", "args": ["link"]},
+    "klammern": {"name": "Klammern", "link": "https://www.klammern.com","spruch": "Klammerst du dich fest, jammerst du erst recht. " ,"personen":"2-4","karten-set":"32", "cat": "stich", "args": ["link"]},
+    "maumau": {"name": "Mau Mau", "link": "https://www.meinspiel.de/blog/mau-mau-regeln/","spruch": "Etwas langweilig, aber schnell und leicht erklärt. Das Uno für arme." ,"personen":"2+","karten-set":"32+","cat": "lege", "args": ["link"]},
+    "shithead": {"name": "Shit Head", "link": "https://www.pagat.com/de/beating/shithead.html","spruch": "Ein bisschen können, ein bisschen Glück. Auf alle Fälle der heiße shit." ,"personen":"2-5","karten-set":"52","cat": "lege", "args": ["link"]},
+    "pferderennen": {"name": "Pferderennen", "link": "https://www.pagat.com/de/beating/shithead.html","spruch": "Huiii! Setz lieber aufs richtige Pferd." ,"personen":"2+","karten-set":"52","cat": "trink", "args": ["link"]},
+    "busfahrer": {"name": "Busfahrer", "link": "https://www.pagat.com/de/beating/shithead.html","spruch": "Macht Spaß, außer du wirst Busfahrer." ,"personen":"2+","karten-set":"52","cat": "trink", "args": ["link"]},
+    "kingscup": {"name": "Kingscup", "link": "https://www.pagat.com/de/beating/shithead.html","spruch": "Gut für viele. Denn dann muss hoffentlich jemand anderes den Kings Cup trinken." ,"personen":"2+","karten-set":"52","cat": "trink", "args": ["link"]}
+
 }
