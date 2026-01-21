@@ -3,52 +3,76 @@
 <head>
     <meta charset="utf-8" />
     <title>Kartensammlung</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+	<link rel="icon" href="./pictures/Logo.png" type="image/icon type">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     
     <h1>Füge ein Spiel hinzu</h1>
-    <div>
-        <p>Fülle das Formular aus und der Admin der Seite kann dann dein Spiel hinzufügen</p>
-    </div>
+	
+	<a id="back" href="../"><i class="arrow left"></i>Zurück zur Kartensammlung</a>
+    
+	<p>Fülle das Formular aus und der Admin der Seite kann dann dein Spiel hinzufügen</p>
 
     <form>
+		<div class="meta">
+		<div class="label-input">
   	<label for="name">Spielname:</label><br>
   	<input type="text" id="name" name="name"><br>
+		</div> 
+		<div class="label-input">
 	<label for="link">Link:</label><br>
-  	<input type="text" id="fname" name="fname"><br>
-  	<label for="spruch">Spruch:</label><br>
-  	<input type="text" id="spruch" name="spruch">
-	<div>
+  	<input type="url" id="link" name="link"><br>
+		</div> 
+	  	<div class="label-input">
+	<label for="spruch">Spruch:</label><br>
+	<textarea type="text" id="spruch-form" name="spruch" cols="30" rows="5"></textarea>
+		</div></div>
+		
 	<p>Zu welcher Kategorie gehört das Spiel:</p>
+		<div class="radio">
+		<div class="label-input">
 	<input type="radio" id="stich" name="cat" value="stich">
   	<label for="stich">Stichspiel</label><br>
+			</div> 
+			<div class="label-input">
   	<input type="radio" id="lege" name="cat" value="lege">
   	<label for="lege">Legespiel</label><br>
+			</div> 
+			<div class="label-input">
   	<input type="radio" id="trink" name="cat" value="trink">
   	<label for="trink">Trinkspiel</label>
+			</div> 
+			<div class="label-input">
 	<input type="radio" id="etc" name="cat" value="etc">
   	<label for="etc">Anderes</label>
-	</div>
-	<div>
+			</div></div>
+		</div>
+		<div>
 	<p></p>
 	<label for="personen">Wie viele Spieler hat das Spiel (z.B. 3 oder 2-5 oder 2+):</label><br>
   	<input type="text" id="personen" name="personen">
-	</div>
+		</div>
 
 	<p>Welches Kartenset wird benötigt:</p>
+		<div class="checkbox">
+		<div class="label-input">
 	<input type="checkbox" id="32" name="32" value="32">
 	<label for="32"> 7-A (32 Karten)</label><br>
+		</div><div class="label-input">
 	<input type="checkbox" id="52" name="52" value="52">
 	<label for="52"> 2-A (52 Karten)</label><br>
+		</div><div class="label-input">
 	<input type="checkbox" id="joker" name="joker" value="joker">
-	<label for="joker">Mit Jokern </label>
+	<label for="joker">Mit Jokern &#129668; </label>
+		</div></div>
 
 	<p></p>
 	<input type="submit" value="Submit">
 	</form>
 
+	<div id="scroll-down"></div>
     <footer>
         <p>&copy; 2025 Party hardy Games</p>
     </footer>

@@ -4,11 +4,14 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 h1 {
-    background: -webkit-linear-gradient(166.66deg, rgb(233, 24, 185) 4.62%, rgb(10, 228, 163) 10.62%, rgb(116, 75, 196) 86.29%);
+    background: -webkit-linear-gradient(166.66deg,  rgb(0, 206, 209) 10.62%, rgb(116, 75, 196) 86.29%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     text-align: center;
@@ -16,13 +19,12 @@ h1 {
     font-size: 2em; 
     width: 95%;
     position: relative;
-    left: 2.5%;
-    top: 20px;
+    top: 25px;
     margin-bottom: 50px;
 
 }
 h2 {
-    background: -webkit-linear-gradient(166.66deg, rgb(233, 24, 185) 4.62%, rgb(10, 228, 163) 10.62%, rgb(116, 75, 196) 86.29%);
+    background: -webkit-linear-gradient(166.66deg,  rgb(0, 206, 209) 10.62%, rgb(116, 75, 196) 86.29%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     text-align: center;
@@ -77,15 +79,20 @@ main {
     font-size: 1em;
     color: #666;
 }
-.card-recommendation a {
+a {
     text-decoration: none;
+}
+#for{
+    background: linear-gradient(to right, #0073ff 0%, #79bbcb  65%, #77A1D3  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
-    margin-right: 5px;
+    margin-right: 5px 0px;
   }
   
   .right {
@@ -142,9 +149,97 @@ footer {
   to {display: block;}
   }
 
-#back{  
-    position:fixed;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  input[type=text] {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+  }
+
+  input[type=text]:focus {
+    background-color: white;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  input[type=submit]:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+.meta{
+    display: flex;
+    flex-direction: column;
+    align-items:  stretch;
+}
+.radio{
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+}
+
+.checkbox label{
+    width: 250px;
+    position: relative;
+    left: -60px;
+}
+.label-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#spruch-form{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    width: 90%;
+    padding: 5px;
+    border: 5px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+}
+#spruch-form:focus {
+    background-color: white;
+  }
+
+
+#back{ 
+    position:absolute;
     top: 3%;
     right: 3%;
     text-decoration: none;
+    font-size: small;
 }
+
+#scroll-down{
+    padding-top: 80px;
+}
+
