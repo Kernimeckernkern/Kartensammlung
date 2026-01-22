@@ -1,7 +1,7 @@
 import { Octokit } from "https://esm.sh/@octokit/rest";
 
 const octokit = new Octokit({
-    auth: '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'
+    auth: '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'
   })
 
   let signup = event => {
@@ -17,18 +17,21 @@ async function add_game_issue(){
    personen = document.querySelector('input[name="personen"]').value,
    set32 = document.querySelector('input[name="32"]'),
    set52 = document.querySelector('input[name="52"]'),
-   setj = document.querySelector('input[name="joker"]');
+   setj = document.querySelector('input[name="joker"]'),
+   comment = document.querySelector('input[name="comment"]').value;
 
   console.log(name, link, spruch, cat, personen, set32.checked, set52.checked, setj.checked);
   if(validate_form){
     
     const karten_set = set_str(set32, set52, setj);
-    
-    await octokit.request('POST /repos/Kernimeckernkern/Kartensammlung/issues', {
+    const body =  `{"${name}": {"name": "${name}","link":"${link}", "spruch":"${spruch}", "personen":"${personen},"karten-set":"${karten_set}", "cat": "${cat}", "args": ["link"]}}`;
+    const message = `Add ${body},\n Kommentar: ${comment}`;
+    try{
+        await octokit.request('POST /repos/Kernimeckernkern/Kartensammlung/issues', {
         owner: 'Kernimeckernkern',
         repo: 'Kartensammlung',
         title: `Add new Game ${name}`,
-        body: `Add {"${name}": {"name": "${name}","link":"${link}", "spruch":"${spruch}", "personen":"${personen},"karten-set":"${karten_set}", "cat": "${cat}", "args": ["link"]}}`,
+        body: message,
         labels: [
           'add-game'
         ],
@@ -36,8 +39,19 @@ async function add_game_issue(){
           'X-GitHub-Api-Version': '2022-11-28'
         }
       })
-        
       alert("Dein Spiel wird weitergeleitet");
+      window.location = "../";
+    }catch(error){
+        if (error.response) {
+            console.error(`Error! Status: ${error.response.status}. Message: ${error.response.data.message}`)
+          }
+          console.error(error)
+          document.body.innerHTML = `<h1>Oooopsie</h1><div class="main"><p>Dein Spiel kann nicht weitergeleitet werden, schicke das hier: </p><p style="color:blue">${message}<p>an Sophie andernweitig</p>
+          <p>Error message: ${error}</p>
+          <a id="for" href="../"><i class="arrow left"></i>Zurück zur Kartensammlung</a>
+          </div>`;
+    }
+      
 
   }else{
     alert("Bitte halte dich ans Format und fülle es nochmal aus");
