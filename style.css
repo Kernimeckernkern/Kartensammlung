@@ -114,6 +114,9 @@ footer {
     width: 100%;
     bottom: 0;
 }
+hr{
+    width: 100%;
+}
 
 #wow-head{
     position: relative;
@@ -143,6 +146,30 @@ footer {
     bottom: 10%;
     left: 95%;
     display: none;
+}
+.add-frage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 12px;
+    border-color:  rgb(0, 206, 209);
+    border-style:solid;
+    border-width: thin;
+}
+.add-frage label{
+    position: relative;
+    top: 15px;
+}
+.add-frage input{
+    padding: 10px;
+}
+.add-frage input[type="submit"]{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    bottom: 10px;
 }
 @keyframes myAnimation {
     from {display: none;}

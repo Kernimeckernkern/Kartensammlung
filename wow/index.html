@@ -12,27 +12,37 @@
     <h1>Wahrheit oder Wahrheit</h1>
     <h2>Die Fragensammlung</h2>
     <a id="back" href="../"><i class="arrow left"></i>Zurück zur Kartensammlung</a>
-    
+
     <main id="fragen">
+        
         <table>
             <thead>
                 <tr>
                 <strong>Fragen</strong>
             </tr>
             </thead>
+            <hr>
             <tbody>
                 <template id="frage">
                 <tr></tr>
                 </template>
             </tbody>
         </table>
+        <hr>
     </main>
 
-</main>
+            <div class="add-frage">
+        <label for="frage">Frage hinzufügen:</label><br>
+        <input type="text" id="frage" name="frage" placeholder="z.B. Was ist dein Lieblingsfarbe?" required>
+
+        <input type="submit" value="Submit">
+        </div>
+    
 <div id="scroll-down"></div>
     <footer>
         <p>&copy; 2025 Party hardy Games</p>
     </footer>
     <script type="module" src="./fragen.js"></script>
+    <script type="module" src="./neue_fragen.js"></script>
 </body>
 </html>
