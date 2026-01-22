@@ -9,6 +9,7 @@
     "shithead": {"name": "Shit Head", "link": "https://www.pagat.com/de/beating/shithead.html","spruch": "Ein bisschen können, ein bisschen Glück. Auf alle Fälle der heiße shit." ,"personen":"2-5","karten-set":"52","cat": "lege", "args": ["link"]},
     "pferderennen": {"name": "Pferderennen", "link": "https://www.pagat.com/de/beating/shithead.html","spruch": "Huiii! Setz lieber aufs richtige Pferd." ,"personen":"2+","karten-set":"52","cat": "trink", "args": ["link"]},
     "busfahrer": {"name": "Busfahrer", "link": "https://www.pagat.com/de/beating/shithead.html","spruch": "Macht Spaß, außer du wirst Busfahrer." ,"personen":"2+","karten-set":"52","cat": "trink", "args": ["link"]},
-    "kingscup": {"name": "Kingscup", "link": "https://www.pagat.com/de/beating/shithead.html","spruch": "Gut für viele. Denn dann muss hoffentlich jemand anderes den Kings Cup trinken." ,"personen":"2+","karten-set":"52","cat": "trink", "args": ["link"]}
+    "kingscup": {"name": "Kingscup", "link": "https://www.pagat.com/de/beating/shithead.html","spruch": "Gut für viele. Denn dann muss hoffentlich jemand anderes den Kings Cup trinken." ,"personen":"2+","karten-set":"52","cat": "trink", "args": ["link"]},
+    "rauberromme": {"name": "Räuber-Rommé","link":"https://www.romme-palast.de/lektion-5-raeuber-romme-regeln/", "spruch":"Rommé aber mit Köpfchen", "personen":"2+","karten-set":"52 + Joker", "cat": "lege", "args": ["link"]}
 
 }

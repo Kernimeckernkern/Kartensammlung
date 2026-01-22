@@ -15,15 +15,15 @@
     
 	<p>Fülle das Formular aus und der Admin der Seite kann dann dein Spiel hinzufügen</p>
 
-    <form>
+    <form action="../index.html">
 		<div class="meta">
 		<div class="label-input">
   	<label for="name">Spielname:</label><br>
-  	<input type="text" id="name" name="name"><br>
+  	<input type="text" id="name" name="name" required><br>
 		</div> 
 		<div class="label-input">
 	<label for="link">Link:</label><br>
-  	<input type="url" id="link" name="link"><br>
+  	<input type="url" id="link" name="link" required><br>
 		</div> 
 	  	<div class="label-input">
 	<label for="spruch">Spruch:</label><br>
@@ -33,7 +33,7 @@
 	<p>Zu welcher Kategorie gehört das Spiel:</p>
 		<div class="radio">
 		<div class="label-input">
-	<input type="radio" id="stich" name="cat" value="stich">
+	<input type="radio" id="stich" name="cat" value="stich" required>
   	<label for="stich">Stichspiel</label><br>
 			</div> 
 			<div class="label-input">
@@ -52,23 +52,28 @@
 		<div>
 	<p></p>
 	<label for="personen">Wie viele Spieler hat das Spiel (z.B. 3 oder 2-5 oder 2+):</label><br>
-  	<input type="text" id="personen" name="personen">
+  	<input type="text" id="personen" name="personen" required>
 		</div>
 
 	<p>Welches Kartenset wird benötigt:</p>
 		<div class="checkbox">
 		<div class="label-input">
-	<input type="checkbox" id="32" name="32" value="32">
+	<input type="checkbox" id="dreizwei" name="32" value="32">
 	<label for="32"> 7-A (32 Karten)</label><br>
 		</div><div class="label-input">
-	<input type="checkbox" id="52" name="52" value="52">
+	<input type="checkbox" id="funfzwei" name="52" value="52">
 	<label for="52"> 2-A (52 Karten)</label><br>
 		</div><div class="label-input">
 	<input type="checkbox" id="joker" name="joker" value="joker">
 	<label for="joker">Mit Jokern &#129668; </label>
-		</div></div>
+		</div>
+	</div>
+		<div class="label-input">
+	<label for="comment">Kommentar:</label><br>
+	<input type="text" id="comment" name="comment" placeholder="Zb.anderes Kartenset etc." >
+				</div>
 
-	<p></p>
+
 	<input type="submit" value="Submit">
 	</form>
 
