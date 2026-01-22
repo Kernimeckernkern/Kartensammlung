@@ -32,6 +32,9 @@ async function add_game_issue(){
         repo: 'Kartensammlung',
         title: `Add new Game ${name}`,
         body: message,
+        assignees: [
+            'SKernchen'
+          ],
         labels: [
           'add-game'
         ],
