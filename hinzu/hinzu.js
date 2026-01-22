@@ -1,7 +1,7 @@
 import { Octokit } from "https://esm.sh/@octokit/rest";
 
 const octokit = new Octokit({
-    auth: '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'
+    auth: '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'
   })
 
   let signup = event => {
