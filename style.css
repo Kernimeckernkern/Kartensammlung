@@ -51,7 +51,7 @@ main {
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    padding: 20px;
+    padding: 20px 20px 0px;
     width: 300px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
@@ -86,6 +86,18 @@ a {
     background: linear-gradient(to right, #0073ff 0%, #79bbcb  65%, #77A1D3  100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+#personen{
+    text-align: left;
+    position: relative;
+    top: 0.8pc;
+    color: green;
+}
+#set{
+    text-align: right;
+    position: relative;
+    bottom: 0.4pc;
+    color: purple;
 }
 .arrow {
     border: solid black;
@@ -147,6 +159,15 @@ hr{
     left: 95%;
     display: none;
 }
+#fragen{
+    width: 95%;
+}
+table{
+    position: relative;
+    bottom: 8px;
+    border-spacing: 10px;
+}
+
 .add-frage{
     display: flex;
     flex-direction: column;
@@ -157,6 +178,7 @@ hr{
     border-color:  rgb(0, 206, 209);
     border-style:solid;
     border-width: thin;
+    max-width: 400px;
 }
 .add-frage label{
     position: relative;
@@ -220,6 +242,7 @@ input {
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
+    max-width: 300px;
   }
 
   input[type=submit]:hover {

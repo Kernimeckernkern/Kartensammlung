@@ -5,6 +5,7 @@ fetch("./spiele.json")
         const keys = Object.keys(data);
         const spielTemp = document.querySelector("#game");
         
+        
         let states_dictionary={ 
             "stich":document.querySelector("#stich"), 
             "lege":document.querySelector("#lege"), 
@@ -14,11 +15,16 @@ fetch("./spiele.json")
             const newGame = document.importNode(spielTemp.content, true);
             const gname = newGame.querySelector("#name"),
             glink = newGame.querySelector("#link"),
-            gspruch = newGame.querySelector("#spruch");
+            gspruch = newGame.querySelector("#spruch"),
+            gpersonen = newGame.querySelector("#personen"),
+            gset = newGame.querySelector("#set");
+            console.log(gpersonen, gset)
             
             gname.textContent = data[game]["name"];
             glink.href = data[game]["link"];
             gspruch.textContent = data[game]["spruch"];
+            gpersonen.textContent = "\u{1F46F} " + data[game]["personen"];
+            gset.textContent = "\u{1F0A1} " + data[game]["karten-set"];
             console.log(data[game]["cat"], states_dictionary[data[game]["cat"]]);
             states_dictionary[data[game]["cat"]].appendChild(newGame);
         })
