@@ -24,7 +24,7 @@ fetch("./spiele.json")
             glink.href = data[game]["link"];
             gspruch.textContent = data[game]["spruch"];
             gpersonen.textContent = "\u{1F46F} " + data[game]["personen"];
-            gset.textContent = "\u{1F0A1} " + data[game]["karten-set"];
+            gset.textContent = "\\u{1F0A1} " + data[game]["karten-set"];
             console.log(data[game]["cat"], states_dictionary[data[game]["cat"]]);
             states_dictionary[data[game]["cat"]].appendChild(newGame);
         })
