@@ -11,6 +11,6 @@
     "busfahrer": {"name": "Busfahrer", "link": "https://beerpong.de/pages/busfahrer-trinkspiel","spruch": "Macht Spaß, außer du wirst Busfahrer." ,"personen":"2+","karten-set":"52","cat": "trink", "args": ["link"]},
     "kingscup": {"name": "Kingscup", "link": "https://beerballer.com/blogs/trinkspiele/kings-cup","spruch": "Gut für viele. Denn dann muss hoffentlich jemand anderes den Kings Cup trinken." ,"personen":"2+","karten-set":"52","cat": "trink", "args": ["link"]},
     "rauberromme": {"name": "Räuber-Rommé","link":"https://www.romme-palast.de/lektion-5-raeuber-romme-regeln/", "spruch":"Rommé aber mit Köpfchen", "personen":"2+","karten-set":"52 + Joker", "cat": "lege", "args": ["link"]},
-    "wizard": {"name": "Wizard","link":"https://www.brettspiele-report.de/images/wizard/Spielanleitung_Wizard.pdf", "spruch":"Ein Schluck für jeden verlorenen Stich", "personen":"3-6,"karten-set":"\u1F9D9", "cat": "stich", "args": ["link"]}
+    "wizard": {"name": "Wizard","link":"https://www.brettspiele-report.de/images/wizard/Spielanleitung_Wizard.pdf", "spruch":"Ein Schluck für jeden verlorenen Stich", "personen":"3-6","karten-set":"\u1F9D9", "cat": "stich", "args": ["link"]}
 
 }
